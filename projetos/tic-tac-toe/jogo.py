@@ -102,7 +102,7 @@ def play(game, jogador_x, jogador_o, print_game=True):
         time.sleep(.8)
 
     if print_game:
-        print('It\'s a tie!')
+        print('É um empate!')
 
 
 
