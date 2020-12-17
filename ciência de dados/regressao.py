@@ -1,10 +1,12 @@
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 import pandas
+import os
 
 #############      Pré-processamento     ###############
 # Coleta e Integração
-arquivo = pandas.read_csv('dados_dengue.csv')
+current_file = os.path.abspath(os.path.dirname(__file__))
+arquivo = pandas.read_csv(current_file + '\\dados_dengue.csv')
 
 anos = arquivo[['ano']]
 casos = arquivo[['casos']]
